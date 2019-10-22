@@ -1,10 +1,26 @@
+sudo: false
+dist: trusty
+
 language: node_js
-before_install:
-  - gem install sass
-  - npm install -g grunt-cli
-  - npm install -g bower
-install:
-  - npm install
-  - bower install
-  - cp config.js.example config.js
-script: grunt
+
+node_js:
+  - "12"
+
+os:
+  - linux
+  - osx
+
+matrix:
+  include:
+  - node_js: "8"
+    os: linux
+  - node_js: "10"
+    os: linux
+cache:
+  yarn: true
+
+before_script:
+  - if git status | grep -q "modified.   \.travis\.yml"; then echo "Dirty yarn.lock"; exit 1; fi
+
+script:
+  - gulp

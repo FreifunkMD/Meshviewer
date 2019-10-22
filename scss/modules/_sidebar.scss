@@ -1,0 +1,142 @@
+.sidebar {
+  box-sizing: border-box;
+  left: 0;
+  position: absolute;
+  transition: left .5s;
+  width: $sidebar-width;
+  z-index: 1005;
+
+  &.hidden {
+    left: -$sidebar-width - $button-distance;
+
+    .sidebarhandle {
+      left: $button-distance;
+      transform: scale(-1, 1);
+
+      // sass-lint:disable-block nesting-depth
+      &[aria-label] {
+        &::after {
+          transform: scale(-1, 1) translate(105px, 52px) !important; // sass-lint:disable-line no-important
+        }
+      }
+    }
+    @media screen and (max-width: map-get($grid-breakpoints, lg) - 1) {
+      width: auto;
+    }
+  }
+
+  .tab {
+    padding-bottom: 15px;
+  }
+
+  .node-list,
+  .node-links,
+  .link-list {
+    th,
+    td {
+      &:first-child {
+        width: 25px;
+      }
+
+      &:nth-child(2) {
+        overflow: hidden;
+        text-align: left;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 50%;
+      }
+    }
+  }
+
+  .link-list {
+    th,
+    td {
+      &:nth-child(2) {
+        width: 60%;
+      }
+    }
+  }
+
+  .node-links {
+    padding-bottom: 15px;
+
+    th,
+    td {
+      &:first-child {
+        width: 35px;
+      }
+    }
+  }
+
+  .container {
+    background: transparentize($color-white, .03);
+    border-right: 1px solid darken($color-white, 10%);
+    min-height: 100vh;
+    overflow-y: visible;
+
+    &.hidden {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, xl) - 1) {
+    background: $color-white;
+    font-size: .8em;
+    margin: 0;
+    width: $sidebar-width-small;
+
+    .sidebarhandle {
+      left: $sidebar-width-small + $button-distance;
+    }
+
+    .container,
+    .infobox {
+      border-radius: 0;
+      margin: 0;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, lg) - 1) {
+    height: auto;
+    min-height: 0;
+    position: static;
+    width: auto;
+
+    .sidebarhandle {
+      display: none;
+    }
+
+    .content {
+      height: 60vh;
+      position: relative;
+      width: auto;
+    }
+  }
+}
+
+.sidebarhandle {
+  left: $sidebar-width + 2 * $button-distance;
+  position: fixed;
+  top: $button-distance;
+  transition: left .5s, color .5s, transform .5s;
+  z-index: 1010;
+
+  &::before {
+    content: '\f124';
+    padding-right: .125em;
+  }
+
+  &[aria-label] {
+    &::after {
+      transform: translate(-45px, 52px) !important; // sass-lint:disable-line no-important
+    }
+  }
+}
+
+.online {
+  color: $color-new;
+}
+
+.offline {
+  color: $color-offline;
+}

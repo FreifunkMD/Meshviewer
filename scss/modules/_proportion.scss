@@ -1,0 +1,29 @@
+.proportion-header {
+  cursor: pointer;
+}
+
+.proportion {
+  th {
+    font-size: .95em;
+    font-weight: normal;
+    padding-right: .71em;
+    text-align: right;
+  }
+
+  td {
+    text-align: left;
+  }
+
+  span {
+    box-sizing: border-box;
+    color: $color-white;
+    display: inline-block;
+    font-weight: bold;
+    min-width: 1.5em;
+    padding: .25em .5em;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}

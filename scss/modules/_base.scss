@@ -1,0 +1,91 @@
+body {
+  -webkit-tap-highlight-color: transparent; // sass-lint:disable-line no-vendor-prefixes
+  background: $color-white;
+  color: $color-black;
+  font-family: $font-family;
+  font-size: $font-size;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+header {
+  background: transparentize($color-black, .98);
+  border-bottom: 1px solid darken($color-white, 10%);
+}
+
+textarea,
+input {
+  background: transparent;
+  color: $color-black, 100;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+h1,
+h2 {
+  font-size: 1.5em;
+  padding: .83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+  padding: 1em 0;
+}
+
+h1,
+h2,
+h3 {
+  padding-left: $button-distance;
+  padding-right: $button-distance;
+}
+
+p,
+pre,
+ul,
+h4 {
+  padding: 0 $button-distance 1em;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: $color-online;
+  text-decoration: none;
+
+  &:focus {
+    color: darken($color-online, 15%);
+  }
+}
+
+p {
+  line-height: 1.67em;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.hide {
+  display: none !important; // sass-lint:disable-line no-important
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
