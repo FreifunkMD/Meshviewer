@@ -11,8 +11,12 @@ module.exports = function () {
     'siteName': 'Freifunk Magdeburg - Babel',
     'mapLayers': [
       {
+        // Der Docker-Container "Meshviewer-Server" wird hier als Tiles-Proxy verwendet.
+        // Dafür ist dann "url": "/tiles-cache/{z}/{x}/{y}.png" zu benutzen.
+        // Meshviewer-Server verwendet Tiles-Server von OpenStreetMap.org .
+        // Bezüglich "OSM Tile usage policy" siehe https://wiki.openstreetmap.org/wiki/DE:Tile_usage_policy
         "name": "OpenStreetMap",
-        "url": "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "url": "/tiles-cache/{z}/{x}/{y}.png",
         "config": {
           "type": "osm",
           "maxZoom": 19,
