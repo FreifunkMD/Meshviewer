@@ -2,13 +2,15 @@ module.exports = function () {
   return {
     // Variables are NODE_ID and NODE_NAME (only a-z0-9\- other chars are replaced with _)
     "nodeInfos": [
- 
+
     ],
     // Array of data provider are supported
     'dataPath': [
      '/data/',
     ],
     'siteName': 'Freifunk Magdeburg - Babel',
+    "maxAge": 21,
+    "nodeZoom": 19,
     'mapLayers': [
       {
         // Der Docker-Container "Meshviewer-Server" wird hier als Tiles-Proxy verwendet.
@@ -35,7 +37,7 @@ module.exports = function () {
         51.997920394,
         11.946889326
       ]
-    ],	
+    ],
 //    'allCommunities': {
 //      'name': 'Gesamtkarte',
 //      'url': '/'
@@ -60,7 +62,7 @@ module.exports = function () {
         'title': 'Magdeburger-Webseite',
         'href': 'https://md.freifunk.net/',
         'target': '_blank'
-      },     
+      },
     ]
   };
 };
