@@ -18,8 +18,8 @@ module.exports = function () {
         // Meshviewer-Server verwendet Tiles-Server von OpenStreetMap.org .
         // Bezüglich "OSM Tile usage policy" siehe https://wiki.openstreetmap.org/wiki/DE:Tile_usage_policy
         "name": "OpenStreetMap",
-//      "url": "/tiles-cache/{z}/{x}/{y}.png",
-        "url": "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
+      "url": "/tiles-cache/{z}/{x}/{y}.png",
+//        "url": "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
         "config": {
           "type": "osm",
           "maxZoom": 19,
