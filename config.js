@@ -2,7 +2,42 @@ module.exports = function () {
   return {
     // Variables are NODE_ID and NODE_NAME (only a-z0-9\- other chars are replaced with _)
     "nodeInfos": [
-
+      {
+        "name": "7-Tage-Daten in Grafana (klick mich)",
+        "href": "http://web.md.freifunk.net:3000/d/w8Nv0__Zk/babel_node_by_name?orgId=1&from=now-7d&to=now-1m&var-node={NODE_NAME}",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Grafana_logo.png",
+        "title": ""
+      },
+      {
+        "name": "Clients",
+        "href": "",
+        "image": "",
+        "title": ""
+      },
+      {
+        "name": "Traffic",
+        "href": "",
+        "image": "",
+        "title": ""
+      },
+      {
+        "name": "Air-Time",
+        "href": "",
+        "image": "",
+        "title": ""
+      },
+      {
+        "name": "CPU-Auslastung",
+        "href": "",
+        "image": "",
+        "title": ""
+      },
+      {
+        "name": "Uptime",
+        "href": "",
+        "image": "",
+        "title": ""
+      },
     ],
     // Array of data provider are supported
     'dataPath': [
@@ -64,6 +99,11 @@ module.exports = function () {
         'href': 'https://md.freifunk.net/',
         'target': '_blank'
       },
-    ]
+      {
+        'title': 'Grafana',
+        'href': 'http://web.md.freifunk.net:3000/d/q-7W38lZz/babel-global?orgId=1',
+        'target': '_blank'
+      },
+    ],
   };
 };
