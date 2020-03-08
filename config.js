@@ -3,39 +3,33 @@ module.exports = function () {
     // Variables are NODE_ID and NODE_NAME (only a-z0-9\- other chars are replaced with _)
     "nodeInfos": [
       {
-        "name": "7-Tage-Daten in Grafana (klick mich)",
-        "href": "http://web.md.freifunk.net:3000/d/w8Nv0__Zk/babel_node_by_name?orgId=1&from=now-7d&to=now-1m&var-node={NODE_NAME}",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Grafana_logo.png",
+        "name": "",
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/YjnBTllZz/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=1&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
-        "name": "Clients",
-        "href": "",
-        "image": "",
+        "name": "",
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/YjnBTllZz/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=2&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
-        "name": "Traffic",
-        "href": "",
-        "image": "",
+        "name": "",
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/YjnBTllZz/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=3&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
-        "name": "Air-Time",
-        "href": "",
-        "image": "",
+        "name": "",
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/YjnBTllZz/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=4&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
-        "name": "CPU-Auslastung",
-        "href": "",
-        "image": "",
-        "title": ""
-      },
-      {
-        "name": "Uptime",
-        "href": "",
-        "image": "",
+        "name": "",
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/YjnBTllZz/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=5&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
     ],
