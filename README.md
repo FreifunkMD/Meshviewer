@@ -7,3 +7,6 @@ Based on https://github.com/ffrgb/meshviewer and https://github.com/kpanic23/mes
 
 Don't clone this if you come from another community.  
 The original can be found at https://github.com/ffrgb/meshviewer
+
+# Documentation
+https://rubo77.gitbook.io/meshviewer-documentation
