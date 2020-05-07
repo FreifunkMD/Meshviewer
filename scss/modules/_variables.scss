@@ -6,9 +6,10 @@ $color-gray-dark: lighten($color-black, 20%) !default;
 
 $color-primary: #dc0067 !default;
 
-$color-new: #459c18 !default;
-$color-online: #1566a9 !default;
+$color-new: #558020 !default;
+$color-online: #558020 !default;
 $color-offline: #cf3e2a !default;
+$color-link: #1566a9 !default;
 
 $color-24ghz: $color-primary !default;
 $color-5ghz: #e3a619 !default;
@@ -16,7 +17,7 @@ $color-others: #0a9c92 !default;
 
 $color-map-background: #f8f4f0 !default;
 
-$font-family: "Assistant", sans-serif !default;
+$font-family: 'Open Sans', sans-serif !default;
 $font-family-icons: ionicons !default;
 $font-family-monospace: monospace !default;
 $font-size: 15px !default;
@@ -38,13 +39,13 @@ $grid-breakpoints: (
   // Large screen / desktop
   lg: 992px,
   // Extra large screen / wide desktop
-  xl: 1200px
+  xl: 1280px
 ) !default;
 
 // 45% sidebar - based on viewport
 // In lib/sidebar to avoid render blocking onload
-$sidebar-width: map-get($grid-breakpoints, xl) * .45 !default;
-$sidebar-width-small: map-get($grid-breakpoints, lg) * .45 !default;
+$sidebar-width: map-get($grid-breakpoints, xl) * .4375 !default;
+$sidebar-width-small: map-get($grid-breakpoints, lg) * .43 !default;
 
 // En/disable included font
 $use-included-font: 1 !default;

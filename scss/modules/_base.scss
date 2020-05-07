@@ -59,11 +59,11 @@ img {
 }
 
 a {
-  color: $color-online;
+  color: $color-link;
   text-decoration: none;
 
   &:focus {
-    color: darken($color-online, 15%);
+    color: darken($color-link, 15%);
   }
 }
 
