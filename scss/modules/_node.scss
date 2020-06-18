@@ -1,0 +1,30 @@
+.bar {
+  background: mix($color-new, $color-white, 60);
+  display: block;
+  height: 1.4em;
+  position: relative;
+
+  &.warning {
+    background: mix($color-offline, $color-white, 60);
+
+    span {
+      background: $color-offline;
+    }
+  }
+
+  span {
+    background: $color-new;
+    display: inline-block;
+    height: 1.4em;
+    max-width: 100%;
+  }
+
+  label {
+    color: $color-white;
+    font-weight: bold;
+    position: absolute;
+    right: .5em;
+    top: .1em;
+    white-space: nowrap;
+  }
+}

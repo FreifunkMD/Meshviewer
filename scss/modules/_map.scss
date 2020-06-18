@@ -1,0 +1,61 @@
+.content {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+
+  .buttons {
+    direction: rtl;
+    position: absolute;
+    right: $button-distance;
+    top: $button-distance;
+    unicode-bidi: bidi-override;
+    z-index: 1001;
+
+    button {
+      margin-left: $button-distance;
+    }
+
+    @media screen and (max-width: map-get($grid-breakpoints, lg) - 1) {
+      right: .1rem;
+      top: 0;
+      transform: scale(.8);
+      transform-origin: right;
+    }
+  }
+
+  @media screen and (max-width: map-get($grid-breakpoints, lg) - 1) {
+    height: calc(100vh - 150px);
+    min-height: 240px;
+    position: relative;
+    width: auto;
+  }
+
+  @media all and (device-height: 1024px) and (orientation: portrait) {
+    height: 800px;
+  }
+
+  @media all and (device-width: 768px) and (orientation: landscape) {
+    height: 768px;
+  }
+
+  @media only screen and (device-height: 568px) and (orientation: portrait) {
+    height: 320px;
+  }
+
+  @media only screen and (device-width: 320px) and (orientation: landscape) {
+    height: 240px;
+  }
+}
+
+.stroke-first {
+  paint-order: stroke;
+}
+
+.pick-coordinates {
+  cursor: crosshair;
+}
+
+.map {
+  height: 100%;
+  width: 100%;
+}
