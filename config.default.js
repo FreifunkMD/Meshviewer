@@ -1,7 +1,7 @@
 module.exports = function () {
   return {
     'reverseGeocodingApi': 'https://nominatim.openstreetmap.org/reverse',
-    'maxAge': 21,
+    'maxAge': 14,
     'maxAgeAlert': 3,
     'nodeZoom': 18,
     'labelZoom': 13,
@@ -22,10 +22,10 @@ module.exports = function () {
         'name': 'node.coordinates',
         'value': 'GeoURI'
       },
-      // {
-      //    "name": "node.contact",
-      //    "value": "owner"
-      // },
+      //    {
+      //      "name": "node.contact",
+      //      "value": "owner"
+      //    },
 
       // Examples for functions
       // {
@@ -53,10 +53,6 @@ module.exports = function () {
         'value': 'mac'
       },
       {
-        'name': 'node.id',
-        'value': 'node_id'
-      },
-      {
         'name': 'node.firmware',
         'value': 'Firmware'
       },
@@ -67,14 +63,6 @@ module.exports = function () {
       {
         'name': 'node.firstSeen',
         'value': 'FirstSeen'
-      },
-      {
-        'name': 'node.airtime2',
-        'value': 'Airtime2'
-      },
-      {
-        'name': 'node.airtime5',
-        'value': 'Airtime5'
       },
       {
         'name': 'node.systemLoad',
@@ -165,9 +153,8 @@ module.exports = function () {
       }
     },
     'forceGraph': {
-      'nodeColor': '#f2e3c6',
+      'nodeColor': '#fff',
       'nodeOfflineColor': '#D43E2A',
-      'nodeUplinkColor': '#6595bd',     
       'highlightColor': 'rgba(255, 255, 255, 0.2)',
       'labelColor': '#fff',
       'tqFrom': '#770038',
