@@ -1,73 +1,58 @@
 module.exports = function () {
   return {
     // Variables are NODE_ID and NODE_NAME (only a-z0-9\- other chars are replaced with _)
-    'nodeInfos': [
+    "nodeInfos": [
       {
-        'name': 'Clientstatistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=1&var-node={NODE_ID}&from=now-1d&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Clientstatistik für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
+        "name": "",  //Clients
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=1&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "title": ""
       },
       {
-        'name': 'Trafficstatistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=2&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Trafficstatistik für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
+        "name": "",  // Traffic
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=2&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "title": ""
       },
       {
-        'name': 'Systemlast',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=4&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Systemlast für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
+        "name": "",  // Airtime
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=5&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "title": ""
       },
       {
-        'name': 'Airtime',
-        'href': 'https://regensburg.freifunk.net/netz/statistik/node/{NODE_ID}/',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000026/node?panelId=5&from=now-1d&var-node={NODE_ID}&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Airtime für {NODE_ID} - weiteren Statistiken',
-        'width': 650,
-        'height': 350
-      }
-    ],
-    'linkInfos': [
+        "name": "",  // Uptime
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=22&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "title": ""
+      },
       {
-        'name': 'Statistik für alle Links zwischen diese Knoten',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/nvSNqoHmz/link?panelId=7&var-node={SOURCE_ID}&var-nodetolink={TARGET_ID}&from=now-1d&&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Linkstatistik des letzten Tages, min und max aller Links zwischen diesen Knoten',
-        'width': 650,
-        'height': 350
-      }
-    ],
-    'globalInfos': [
-      {
-        'name': 'Globale Statistik',
-        'href': 'https://regensburg.freifunk.net/netz/statistik',
-        'image': 'https://grafana.regensburg.freifunk.net/render/d-solo/000000028/globals?panelId=2&from=now-7d&&width=650&height=350&theme=light&_t={TIME}',
-        'title': 'Globale Statistik - weiteren Statistiken',
-        'width': 650,
-        'height': 350
-      }
+        "name": "",  //Systemlast
+        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=4&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "title": ""
+      },
     ],
     // Array of data provider are supported
     'dataPath': [
-      'https://regensburg.freifunk.net/data/'
+     '/data/',
     ],
-    'siteName': 'Freifunk Regensburg',
+    'siteName': 'Freifunk Magdeburg - Babel',
+    "maxAge": 21,
+    "nodeZoom": 19,
     'mapLayers': [
       {
-        'name': 'Wikimedia OSM Map',
-        'url': 'https://maps.wikimedia.org/osm-intl/{z}/{x}/{y}{r}.png',
-        'config': {
-          'maxZoom': 20,
-          'subdomains': '1234',
-          'attribution': '<a href="https://wikimediafoundation.org/wiki/Maps_Terms_of_Use" rel="noopener" target="_blank">Wikimedia maps</a><a href="http://www.openmaptiles.org/" target="_blank">&copy; OpenMapTiles</a> <a href="http://www.openstreetmap.org/about/" target="_blank" rel="noopener">&copy; OpenStreetMap contributors</a>',
-          'start': 6
+        // Der Docker-Container "Meshviewer-Server" wird hier als Tiles-Proxy verwendet.
+        // Dafür ist dann "url": "/tiles-cache/{z}/{x}/{y}.png" zu benutzen.
+        // Meshviewer-Server verwendet Tiles-Server von OpenStreetMap.org .
+        // Bezüglich "OSM Tile usage policy" siehe https://wiki.openstreetmap.org/wiki/DE:Tile_usage_policy
+        "name": "OpenStreetMap",
+//    "url": "/tiles-cache/{z}/{x}/{y}.png",
+      "url": "https://tile.openstreetmap.de/{z}/{x}/{y}.png",
+        "config": {
+          "type": "osm",
+          "maxZoom": 19,
+          "attribution": "Map data (c) <a href\"http://openstreetmap.org\">OpenStreetMap</a> contributor"
         }
       }
     ],
@@ -75,34 +60,44 @@ module.exports = function () {
     'fixedCenter': [
       // Northwest
       [
-        49.3522,
-        11.7752
+        52.300495981,
+        11.383183146
       ],
-      // Southeast
       [
-        48.7480,
-        12.8917
+        51.997920394,
+        11.946889326
       ]
     ],
+//    'allCommunities': {
+//      'name': 'Gesamtkarte',
+//      'url': '/'
+//    },
+//    'domainNames': [
+//      {
+//        'domain': 'ffmd',
+//        'name': 'Magdeburg',
+//      }
+//     ],
     'domainNames': [
       {
-        'domain': 'ffrgb-bat15',
-        'name': 'Regensburg'
+        'domain': 'ffmd',
+        'name': 'Magdeburg',
       },
-      {
-        'domain': 'ffrgb',
-        'name': 'Regensburg'
-      }
+
+//      { "site": "legacybat_11s", "name": "Legacy BATMAN (Single Domain)" },
+//      { "domain": "dom2", "name": "Single Domain" },
     ],
     'linkList': [
       {
-        'title': 'Impressum',
-        'href': '/verein/impressum/'
+        'title': 'Magdeburger-Webseite',
+        'href': 'https://md.freifunk.net/',
+        'target': '_blank'
       },
       {
-        'title': 'Datenschutz',
-        'href': '/verein/datenschutz/'
-      }
-    ]
+        'title': 'Grafana',
+        'href': 'http://web.md.freifunk.net:3000/d/q-7W38lZz/babel-global?orgId=1',
+        'target': '_blank'
+      },
+    ],
   };
 };
