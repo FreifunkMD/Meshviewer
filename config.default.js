@@ -165,6 +165,8 @@ module.exports = function () {
       }
     },
     'forceGraph': {
+      'nodeBatmanColor': '#FF00FF',
+      'nodeBatmanOffline': '#A400A4',
       'nodeColor': '#f2e3c6',
       'nodeOfflineColor': '#D43E2A',
       'nodeUplinkColor': '#6595bd',     
