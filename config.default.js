@@ -165,11 +165,11 @@ module.exports = function () {
       }
     },
     'forceGraph': {
-      'nodeBatmanColor': '#FF00FF',
-      'nodeBatmanOffline': '#A400A4',
+      'nodeBatmanColor': '#DA9F02',
+      'nodeBatmanOffline': '#9E7300',
       'nodeColor': '#f2e3c6',
       'nodeOfflineColor': '#D43E2A',
-      'nodeUplinkColor': '#6595bd',     
+      'nodeUplinkColor': '#6595bd',
       'highlightColor': 'rgba(255, 255, 255, 0.2)',
       'labelColor': '#fff',
       'tqFrom': '#770038',
