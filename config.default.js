@@ -167,6 +167,7 @@ module.exports = function () {
     'forceGraph': {
       'nodeBatmanColor': '#DA9F02',
       'nodeBatmanOffline': '#9E7300',
+      'nodeBatmanUplinkColor': '#FFDC01',
       'nodeColor': '#f2e3c6',
       'nodeOfflineColor': '#D43E2A',
       'nodeUplinkColor': '#6595bd',
