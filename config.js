@@ -4,32 +4,32 @@ module.exports = function () {
     "nodeInfos": [
       {
         "name": "",  //Clients
-        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
-        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=1&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "href": "https://grafana.md.freifunk.net/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "https://grafana.md.freifunk.net/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=1&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
         "name": "",  // Traffic
-        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
-        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=2&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "href": "https://grafana.md.freifunk.net/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "https://grafana.md.freifunk.net/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=2&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
         "name": "",  // Airtime
-        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
-        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=5&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "href": "https://grafana.md.freifunk.net/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "https://grafana.md.freifunk.net/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=5&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
         "name": "",  // Uptime
-        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
-        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=22&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "href": "https://grafana.md.freifunk.net/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "https://grafana.md.freifunk.net/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=22&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
       {
         "name": "",  //Systemlast
-        "href": "http://web.md.freifunk.net:3000/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
-        "image": "http://web.md.freifunk.net:3000/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=4&width=520&height=200&theme=light&tz=Europe%2FBerlin",
+        "href": "https://grafana.md.freifunk.net/d/YjnBTllZz/babel-node_by_id?orgId=1&var-node={NODE_ID}",
+        "image": "https://grafana.md.freifunk.net/render/d-solo/PxSAZguZk/babel_node_details_for_map?orgId=1&var-node={NODE_ID}&var-saveinterval=60&panelId=4&width=520&height=200&theme=light&tz=Europe%2FBerlin",
         "title": ""
       },
     ],
@@ -95,7 +95,7 @@ module.exports = function () {
       },
       {
         'title': 'Grafana',
-        'href': 'http://web.md.freifunk.net:3000/d/q-7W38lZz/babel-global?orgId=1',
+        'href': 'https://grafana.md.freifunk.net/d/q-7W38lZz/babel-global?orgId=1',
         'target': '_blank'
       },
     ],
