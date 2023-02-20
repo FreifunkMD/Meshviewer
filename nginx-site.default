@@ -1,0 +1,40 @@
+server_tokens off;
+
+proxy_cache_path  /var/www/cache levels=1:2 keys_zone=osm-backend-cache:8m max_size=5g inactive=7d;
+
+upstream osm_backend {
+  server  a.tile.openstreetmap.org;
+  server  b.tile.openstreetmap.org;
+  server  c.tile.openstreetmap.org;
+}
+
+server {
+  listen 80 default_server;
+  listen [::]:80 default_server;
+  root /var/www/html;
+  index index.html;
+  server_name _;
+
+  location / {
+    # First attempt to serve request as file, then
+    # as directory, then fall back to displaying a 404.
+    try_files $uri $uri/ =404;
+  }
+
+  location ~ ^/tiles-cache/(.*)$ {
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X_FORWARDED_PROTO http;
+    proxy_set_header Host $http_host;
+
+    proxy_cache osm-backend-cache;
+    proxy_hide_header Set-Cookie;
+    proxy_ignore_headers Set-Cookie;
+    proxy_cache_valid  200 302  7d;
+    proxy_cache_valid  404      1m;
+    proxy_redirect off;
+    if (!-f $request_filename) {
+      proxy_pass http://osm_backend/$1;
+      break;
+    }
+  }
+}
